@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react'
-import logo from '@/assets/logo.png'
+import logo from '@/assets/images/logo.png'
 
 const Footer = () => {
   return (
@@ -32,13 +32,13 @@ const Footer = () => {
               <div className='flex items-start space-x-3'>
                 <MapPin className='h-5 w-5 text-primary mt-0.5' />
                 <div>
-                  <p className='text-sm'>123 Business District</p>
-                  <p className='text-sm'>Downtown, City Center</p>
+                  <p className='text-sm'>99 Cong Hoa Street, 12 Ward</p>
+                  <p className='text-sm'>Tan Binh District, Ho Chi Minh City</p>
                 </div>
               </div>
               <div className='flex items-center space-x-3'>
                 <Phone className='h-5 w-5 text-primary' />
-                <p className='text-sm'>1-800-SGN-EXPRESS</p>
+                <p className='text-sm'>(+84) 036 825 3868</p>
               </div>
               <div className='flex items-center space-x-3'>
                 <Mail className='h-5 w-5 text-primary' />

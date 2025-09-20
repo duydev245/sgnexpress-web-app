@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
-import logo from '@/assets/logo.png'
+import logo from '@/assets/images/logo.png'
 import { useNavigate } from 'react-router-dom'
 
 const Header = () => {

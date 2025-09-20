@@ -1,4 +1,4 @@
-import HeroBanner from '@/assets/hero-banner.jpg'
+import HeroBanner from '@/assets/images/hero-banner.jpg'
 
 const HeroSection = () => {
   return (

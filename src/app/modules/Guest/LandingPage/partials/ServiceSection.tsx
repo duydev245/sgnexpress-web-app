@@ -6,7 +6,7 @@ const ServiceSection = () => {
    const services = [
     {
       icon: MapPin,
-      title: "Domestic Shipping",
+      title: "Door-to-door Shipping",
       description:
         "Nationwide delivery with extensive network coverage across all provinces, ensuring fast and reliable delivery times.",
     },
