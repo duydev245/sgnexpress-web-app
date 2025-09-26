@@ -2,7 +2,8 @@ import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import logo from '@/assets/images/logo.png'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { PATH } from '@/routes/path'
 
 const Header = () => {
   const navigate = useNavigate()
@@ -20,18 +21,18 @@ const Header = () => {
         </div>
 
         <nav className='hidden md:flex items-center space-x-8'>
-          <a href='#about' className='text-foreground hover:text-primary transition-colors'>
-            About
-          </a>
-          <a href='#services' className='text-foreground hover:text-primary transition-colors'>
+          <Link to={PATH.LANDING_PAGE} className='text-foreground hover:text-primary transition-colors'>
+            Home
+          </Link>
+          <Link to={PATH.LANDING_PAGE} className='text-foreground hover:text-primary transition-colors'>
             Services
-          </a>
-          <a href='#testimonials' className='text-foreground hover:text-primary transition-colors'>
-            Testimonials
-          </a>
-          <a href='#contact' className='text-foreground hover:text-primary transition-colors'>
+          </Link>
+          <Link to={PATH.BLOG_PAGE} className='text-foreground hover:text-primary transition-colors'>
+            Blogs
+          </Link>
+          <Link to={PATH.CONTACT_PAGE} className='text-foreground hover:text-primary transition-colors'>
             Contact
-          </a>
+          </Link>
         </nav>
 
         <Button className='hidden md:flex bg-primary text-primary-foreground hover:bg-primary/80'>Contact Us</Button>
@@ -48,34 +49,34 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className='md:hidden bg-card border-t border-border'>
           <nav className='container mx-auto px-4 py-4 flex flex-col space-y-4'>
-            <a
-              href='#about'
-              className='text-foreground hover:text-primary transition-colors py-2'
+            <Link
+              to={PATH.LANDING_PAGE}
+              className='text-foreground hover:text-primary transition-colors'
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
-            </a>
-            <a
-              href='#services'
-              className='text-foreground hover:text-primary transition-colors py-2'
+              Home
+            </Link>
+            <Link
+              to={PATH.LANDING_PAGE}
+              className='text-foreground hover:text-primary transition-colors'
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
-            </a>
-            <a
-              href='#testimonials'
-              className='text-foreground hover:text-primary transition-colors py-2'
+            </Link>
+            <Link
+              to={PATH.BLOG_PAGE}
+              className='text-foreground hover:text-primary transition-colors'
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Testimonials
-            </a>
-            <a
-              href='#contact'
-              className='text-foreground hover:text-primary transition-colors py-2'
+              Blogs
+            </Link>
+            <Link
+              to={PATH.CONTACT_PAGE}
+              className='text-foreground hover:text-primary transition-colors'
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
-            </a>
+            </Link>
             <Button className='bg-primary text-primary-foreground hover:bg-primary/80 w-full mt-4'>Contact Us</Button>
           </nav>
         </div>

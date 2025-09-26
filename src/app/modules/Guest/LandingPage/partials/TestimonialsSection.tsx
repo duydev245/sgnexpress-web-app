@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className='bg-background border-border'>
+            <Card key={index} className='bg-background border-border pt-6'>
               <CardContent className='p-6'>
                 <div className='flex items-center mb-4'>
                   {[...Array(testimonial.rating)].map((_, i) => (

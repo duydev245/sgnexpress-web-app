@@ -3,7 +3,7 @@ import { PATH } from './path'
 import GuestLayout from '@/layouts/GuestLayout/GuestLayout'
 import LandingPage from '@/modules/Guest/LandingPage/LandingPage'
 import BlogPage from '@/modules/Guest/BlogPage/BlogPage'
-import ServicePage from '@/modules/Guest/ServicePage/ServicePage'
+// import ServicePage from '@/modules/Guest/ServicePage/ServicePage'
 import ContactPage from '@/modules/Guest/ContactPage/ContactPage'
 import BlogDetailPage from '@/modules/Guest/BlogDetailPage/BlogDetailPage'
 
@@ -41,14 +41,14 @@ const useRouteElement = () => {
             </GuestLayout>
           )
         },
-        {
-          path: PATH.SERVICE_PAGE,
-          element: (
-            <GuestLayout>
-              <ServicePage />
-            </GuestLayout>
-          )
-        },
+        // {
+        //   path: PATH.SERVICE_PAGE,
+        //   element: (
+        //     <GuestLayout>
+        //       <ServicePage />
+        //     </GuestLayout>
+        //   )
+        // },
         {
           path: PATH.CONTACT_PAGE,
           element: (
