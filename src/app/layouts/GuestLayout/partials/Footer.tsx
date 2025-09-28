@@ -11,11 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className='flex items-center mb-4'>
-              <img
-                src={logo}
-                alt='SGNExpress Logo'
-                className='w-auto h-10 cursor-pointer'
-              />
+              <img src={logo} alt='SGNExpress Logo' className='w-auto h-10 cursor-pointer' />
             </div>
             <p className='text-secondary-foreground/80 mb-4'>Your trusted partner for all shipping needs</p>
             <div className='flex space-x-4'>
@@ -38,11 +34,15 @@ const Footer = () => {
               </div>
               <div className='flex items-center space-x-3'>
                 <Phone className='h-5 w-5 text-primary' />
-                <p className='text-sm'>(+84) 036 825 3868</p>
+                <a href='tel:+840368253868' className='text-sm hover:underline'>
+                  (+84) 036 825 3868
+                </a>
               </div>
               <div className='flex items-center space-x-3'>
                 <Mail className='h-5 w-5 text-primary' />
-                <p className='text-sm'>info@sgnexpress.vn</p>
+                <a href='mailto:info@sgnexpress.vn' className='text-sm hover:underline'>
+                  info@sgnexpress.vn
+                </a>
               </div>
             </div>
           </div>

@@ -2,10 +2,10 @@ export const PATH = {
   // GUEST MODULE
   HOME: '/',
   LANDING_PAGE: '/landing-page',
-  BLOG_PAGE: '/blog',
+  BLOG_PAGE: '/blog-page',
   BLOG_DETAIL_PAGE: '/blog/:slug',
-  CONTACT_PAGE: '/contact',
-  SERVICE_PAGE: '/service',
+  CONTACT_PAGE: '/contact-page',
+  SERVICE_PAGE: '/service-page',
   // AUTH MODULE
   AUTH: '/auth',
   LOGIN: '/auth/login',

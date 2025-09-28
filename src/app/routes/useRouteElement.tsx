@@ -6,6 +6,8 @@ import BlogPage from '@/modules/Guest/BlogPage/BlogPage'
 // import ServicePage from '@/modules/Guest/ServicePage/ServicePage'
 import ContactPage from '@/modules/Guest/ContactPage/ContactPage'
 import BlogDetailPage from '@/modules/Guest/BlogDetailPage/BlogDetailPage'
+import NotFoundPage from '@/modules/Guest/NotFoundPage/NotFoundPage'
+import ServicePage from '@/modules/Guest/ServicePage/ServicePage'
 
 const useRouteElement = () => {
   const routes = useRoutes([
@@ -41,14 +43,14 @@ const useRouteElement = () => {
             </GuestLayout>
           )
         },
-        // {
-        //   path: PATH.SERVICE_PAGE,
-        //   element: (
-        //     <GuestLayout>
-        //       <ServicePage />
-        //     </GuestLayout>
-        //   )
-        // },
+        {
+          path: PATH.SERVICE_PAGE,
+          element: (
+            <GuestLayout>
+              <ServicePage />
+            </GuestLayout>
+          )
+        },
         {
           path: PATH.CONTACT_PAGE,
           element: (
@@ -58,6 +60,15 @@ const useRouteElement = () => {
           )
         }
       ]
+    },
+    {
+      path: PATH.NOTFOUND,
+      element: <NotFoundPage />
+    },
+    {
+      path: '*',
+      index: true,
+      element: <Navigate to={PATH.NOTFOUND} />
     }
   ])
 

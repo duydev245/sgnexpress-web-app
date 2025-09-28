@@ -24,7 +24,7 @@ const Header = () => {
           <Link to={PATH.LANDING_PAGE} className='text-foreground hover:text-primary transition-colors'>
             Home
           </Link>
-          <Link to={PATH.LANDING_PAGE} className='text-foreground hover:text-primary transition-colors'>
+          <Link to={PATH.SERVICE_PAGE} className='text-foreground hover:text-primary transition-colors'>
             Services
           </Link>
           <Link to={PATH.BLOG_PAGE} className='text-foreground hover:text-primary transition-colors'>
@@ -35,7 +35,12 @@ const Header = () => {
           </Link>
         </nav>
 
-        <Button className='hidden md:flex bg-primary text-primary-foreground hover:bg-primary/80'>Contact Us</Button>
+        <Button
+          className='hidden md:flex bg-primary text-primary-foreground hover:bg-primary/80'
+          onClick={() => navigate(PATH.CONTACT_PAGE)}
+        >
+          Contact Us
+        </Button>
 
         <button
           onClick={toggleMobileMenu}
@@ -57,7 +62,7 @@ const Header = () => {
               Home
             </Link>
             <Link
-              to={PATH.LANDING_PAGE}
+              to={PATH.SERVICE_PAGE}
               className='text-foreground hover:text-primary transition-colors'
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -77,7 +82,12 @@ const Header = () => {
             >
               Contact
             </Link>
-            <Button className='bg-primary text-primary-foreground hover:bg-primary/80 w-full mt-4'>Contact Us</Button>
+            <Button
+              className='bg-primary text-primary-foreground hover:bg-primary/80 w-full mt-4'
+              onClick={() => navigate(PATH.CONTACT_PAGE)}
+            >
+              Contact Us
+            </Button>
           </nav>
         </div>
       )}
