@@ -8,6 +8,7 @@ import {
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
 import { blogData } from '@/mocks'
+import { PATH } from '@/routes/path'
 import { Home } from 'lucide-react'
 
 const allBlogPosts = blogData || []
@@ -20,7 +21,7 @@ const BlogPage = () => {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href='/'>
+              <BreadcrumbLink href={PATH.HOME}>
                 <Home className='w-4 h-4 mr-1' />
               </BreadcrumbLink>
             </BreadcrumbItem>

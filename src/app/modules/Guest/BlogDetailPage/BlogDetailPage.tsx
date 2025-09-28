@@ -8,6 +8,7 @@ import {
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
 import { blogData } from '@/mocks'
+import { PATH } from '@/routes/path'
 import { Calendar, Clock, Home, Tag } from 'lucide-react'
 import { useParams } from 'react-router-dom'
 
@@ -36,13 +37,13 @@ const BlogDetailPage = () => {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href='/'>
+                <BreadcrumbLink href={PATH.HOME}>
                   <Home className='w-4 h-4 mr-1' />
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href='/blog'>Blogs</BreadcrumbLink>
+                <BreadcrumbLink href={PATH.BLOG_PAGE}>Blogs</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
